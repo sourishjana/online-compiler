@@ -1,0 +1,17 @@
+### //cat query
+POST  http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+  "email":"sourish@gmail.com",
+  "password":"sourish"
+}
+
+###
+GET  http://localhost:5000/api/auth
+Content-Type: application/json
+HEAD: x-auth-token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAyOTIyYTJlNWViZTUwY2RjYmU5MDEyIn0sImlhdCI6MTYxMzM3NTU3NSwiZXhwIjoxNjEzMzc5MTc1fQ.aZjRPc4Ng0hYqpLBgWQZ5G5ztJckjH7QzKRFxjQdjI4
+
+{
+    
+}

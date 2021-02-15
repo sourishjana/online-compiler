@@ -11,6 +11,10 @@ const uri = url; // production
     useUnifiedTopology: true,
     useFindAndModify:false
 }); 
+git remote add origin https://github.com/sourishjana/DSA-Expert-Project-Admin-Backend.git
+git branch -M main
+git push -u origin main
+
 //"mongoURI":"mongodb://127.0.0.1:27017/todoooDB",
 */
 

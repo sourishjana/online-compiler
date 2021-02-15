@@ -9,11 +9,6 @@ const Navbar = ({  auth:{isAuthenticated, loading} , logout }) => {
     const authLinks=(
         <ul>
             <li>
-                <Link to='/todos' >
-                    Todos
-                </Link>
-            </li>
-            <li>
                 <Link to='/dashboard' >
                     <i className="fas fa-user"></i>{' '}
                     <span className="hide-sm" >Dashboard</span>
@@ -35,25 +30,24 @@ const Navbar = ({  auth:{isAuthenticated, loading} , logout }) => {
     )
 
     return (
-        <nav className="navbar bg-dark">
-            <h1>
-            {
+      <nav className="navbar bg-dark">
+        <h1>
+          {/*
                 isAuthenticated ? 
                 <Link to="/dashboard"><i className="far fa-check-circle"></i>TodoWoo</Link> : 
                 <Link to="/"><i className="far fa-check-circle"></i>TodoWoo</Link>
+            */}
+           {
+                isAuthenticated ? 
+                <Link to="/"><i className="far fa-check-circle"></i>DSAExpert</Link> : 
+                <Link to="/"><i className="far fa-check-circle"></i>DSAExpert</Link>
             }
-            </h1>
-            {
-                !loading && (
-                    <Fragment>
-                        {
-                            isAuthenticated ? authLinks : guestLinks
-                        }
-                    </Fragment>
-                )
-            }
-        </nav>
-    )
+        </h1>
+        {!loading && (
+          <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
+        )}
+      </nav>
+    );
 }
 
 Navbar.propTypes = {

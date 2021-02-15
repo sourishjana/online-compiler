@@ -8,9 +8,9 @@ const Landing = () => {
         <section className="landing">
             <div className="dark-overlay">
                 <div className="landing-inner">
-                <h1 className="x-large">TodoWoo</h1>
+                <h1 className="x-large">Be a expert in DSA.</h1>
                 <p className="lead">
-                    Create a todo list to manage tasks better
+                    Write some lines of code
                 </p>
                 <div className="buttons">
                     <Link to="/register" className="btn btn-primary">Sign Up</Link>

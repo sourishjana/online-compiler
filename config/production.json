@@ -1,0 +1,11 @@
+{
+  "mongoURI2": "mongodb+srv://sourish:sourish@cluster0.kxczu.mongodb.net/test",
+  "mongoURI":"mongodb+srv://sourish:sourish@cluster0.ecayx.mongodb.net/DSADB",
+  "jwtSecret": "myJwtSecretSourish",
+  "password": "project@TEST_2020",
+  "paymentKey": "rzp_test_INXSnIfTCct3IN",
+  "paymentSecret": "EdS1VOje2IXOaPyV451MbRf5",
+  "verificationSecret": "project@TEST_2020",
+  "sendGrid": "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",
+  "sendGridApi": "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"
+}

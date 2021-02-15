@@ -1,9 +1,9 @@
 const mongoose=require('mongoose')
 const config=require('config')
-const uri=config.get('mongoURI')
+const url=config.get('mongoURI')
 
-const db='todo'
-const url=uri+db
+const uri = url; // production
+//const uri="mongodb://127.0.0.1:27017/DSADB" // development
 
 /* mongoose.connect(url, {
     useNewUrlParser: true,
@@ -11,13 +11,12 @@ const url=uri+db
     useUnifiedTopology: true,
     useFindAndModify:false
 }); 
-
 //"mongoURI":"mongodb://127.0.0.1:27017/todoooDB",
 */
 
 const connectDB = async()=>{
     try{
-        await mongoose.connect(url,{ useUnifiedTopology: true, useNewUrlParser:true, useCreateIndex:true, useFindAndModify:false })
+        await mongoose.connect(uri,{ useUnifiedTopology: true, useNewUrlParser:true, useCreateIndex:true, useFindAndModify:false })
         console.log("Mongodb connected ...")
     }catch(err){
         console.log(err.message)
